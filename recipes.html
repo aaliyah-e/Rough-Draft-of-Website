@@ -7,6 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Gowun+Dodum&display=swap" rel="stylesheet">
   <title>⋆｡°✩ Cozy Comforts ✩°｡⋆</title>
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( document ).tooltip({
+      items: "img",
+      content: function() {
+        var element = $( this );
+        if ( element.is( "img" ) ) {
+          return element.attr( "alt" );
+        }
+      }
+    });
+  } );
+  </script>
+
 </head>
 
 <body>
@@ -33,32 +50,32 @@
     <div class="recipe-directory-grid">
 
       <div class="recipe-directory-card">
-        <img src="./images/bento_cake.jpg" alt="">
+        <img src="./images/bento_cake.jpg" alt="A small blue cake decorated with white daisies made from icing on a plate.">
         <span>Bento Cake</span>
       </div>
 
       <div class="recipe-directory-card">
-        <img src="./images/selterskuchen.jpg" alt="">
-        <span>Selterkuchen (Seltzer Cake)</span>
+        <img src="./images/selterskuchen.jpg" alt="A selterskuchen (seltzer cake) dusted with powdered sugar in a 13 x 9 rectangular pan.">
+        <span>Selterskuchen (Seltzer Cake)</span>
       </div>
 
       <div class="recipe-directory-card">
-        <img src="./images/chocolate_trifle.jpg" alt="">
+        <img src="./images/chocolate_trifle.jpg" alt="A chocolate trifle with layers of pudding, brownies, and whipped cream.">
         <span>Chocolate Trifle</span>
       </div>
 
       <div class="recipe-directory-card">
-        <img src="./images/strawberry_trifle.jpg" alt="">
+        <img src="./images/strawberry_trifle.jpg" alt="A strawberry trifle with layers of pudding, strawberry compote, and whipped cream.">
         <span>Strawberry Trifle</span>
       </div>
 
       <div class="recipe-directory-card">
-        <img src="./images/pie.jpg" alt="">
+        <img src="./images/pie.jpg" alt="A pie with an assortment of berries baked into it.">
         <span>Mixed-Berry Pie</span>
       </div>
 
       <div class="recipe-directory-card">
-        <img src="../images/placeholder.jpg" alt="">
+        <img src="./images/log.jpg" alt="A roll cake in the shape of a log, just in time for Christmas.">
         <span>Yule Log</span>
       </div>
 

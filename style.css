@@ -4,11 +4,35 @@
   padding: 0;
 }
 
+
+/* ALL LINKS */
+a:link {
+  text-decoration: none;
+  color:#ff7b87
+}
+
+a:visited {
+  text-decoration: none;
+  color:#ff7b87
+}
+
+a:hover {
+  text-decoration: none;
+  color:#ff7b87
+}
+
+a:active {
+   text-decoration: none;
+   color:#ff7b87
+}
+
 body {
   font-family: 'Gowun Dodum', sans-serif;
   background-color: #fffcf3;
   color: #2e2929;
 }
+
+/* NAVIGATION BAR */
 
 /* header */
 .site-header {
@@ -50,6 +74,9 @@ body {
   font-size: 18px;
 }
 
+
+/* LANDING PAGE */
+
 /* form section, so the mailing list (that doesn't work, but ehh...) */
 .form-section {
   background-color: #ffa1ad;
@@ -73,29 +100,7 @@ body {
   background-color: #fffdf2;
 }
 
-
-/* link stuff */
-a:link {
-  text-decoration: none;
-  color:#ff7b87
-}
-
-a:visited {
-  text-decoration: none;
-  color:#ff7b87
-}
-
-a:hover {
-  text-decoration: none;
-  color:#ff7b87
-}
-
-a:active {
-   text-decoration: none;
-   color:#ff7b87
-}
-
-/* recipe section stuff */
+/* landing page recipe section stuff */
 .recipe-grid {
   display: flex;
   justify-content: center;
@@ -126,7 +131,7 @@ a:active {
   object-fit: cover;
 }
 
-/* info section */
+/* landing page info section */
 .info-section {
   background-color: #d3eebb;
   display: flex;
@@ -151,6 +156,9 @@ a:active {
   height: 250px;
   object-fit: cover;
 }
+
+
+/* STANDARD RECIPE DIRECTORY PAGE */
 
 /* container for the basic recipe directory page stuff (so "default" look for any kind of recipe category) */
 .recipe-directory-container {
@@ -197,7 +205,139 @@ a:active {
   color: #2e2929;
 }
 
+/* DIARY PAGE STUFF */
+.main-diary-content {
+text-align: center;
+padding: 50px 20px;
+max-width: 800px;
+margin: 0 auto;
+}
 
+
+.main-diary-content h2 {
+font-size: 28px;
+margin-bottom: 10px;
+text-align: center;
+color: #ff8c8c;
+}
+
+
+.main-diary-content p.description {
+font-size: 16px;
+max-width: 650px;
+margin: 0 auto 40px;
+line-height: 1.6;
+text-align: center;
+}
+
+
+.stars {
+font-size: 22px;
+margin: 40px 0 20px;
+text-align: center;
+}
+
+
+ul.diary-list {
+text-align: center;
+margin: 0 auto;
+max-width: 600px;
+line-height: 1.8;
+list-style-type: none;
+}
+
+
+/* THINGS TO SHARE SECTION (ON DIARY PAGE!!!) */
+.share-section {
+background-color: #d3eebb;
+padding: 60px 20px;
+text-align: center;
+margin-top: 60px;
+}
+
+
+.share-section h3 {
+font-size: 22px;
+margin-bottom: 40px;
+}
+
+.weeklyshare-caption {
+margin-top: 10px;
+font-size: 14px;
+color: #444;
+}
+
+/* CONTACT PAGE */
+
+.contact-wrapper {
+max-width: 700px;
+margin: 60px auto;
+padding: 20px;
+text-align: center;
+}
+
+
+.contact-wrapper h2 {
+font-size: 28px;
+margin-bottom: 10px;
+color:  #ff8c8c;
+}
+
+
+.intro {
+max-width: 550px;
+margin: 0 auto 40px;
+line-height: 1.5;
+font-size: 16px;
+}
+
+
+.contact-form {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+
+/* Form Rows */
+.row {
+display: flex;
+gap: 20px;
+}
+
+
+.row input {
+flex: 1;
+}
+
+
+/* inputs on the form */
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #e9e9e9;
+background-color: #ffffff;
+font-size: 15px;
+border-radius: 4px;
+}
+
+
+textarea {
+min-height: 140px;
+}
+
+
+/* form button */
+button {
+background-color:  #ff8c8c;
+padding: 12px 20px;
+border: none;
+font-size: 16px;
+border-radius: 4px;
+}
+
+/* RESPONSIVENESS... maybe? (need to look at how it looks on smaller screens and adjust) */
 
 @media (max-width: 900px) {
   /* the header and the nav bar should stack when it gets too small */
@@ -251,69 +391,6 @@ a:active {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* DIARY PAGE STUFF */
-
-.main-diary-content {
-text-align: center;
-padding: 50px 20px;
-max-width: 800px;
-margin: 0 auto;
-}
-
-
-.main-diary-content h2 {
-font-size: 28px;
-margin-bottom: 10px;
-text-align: center;
-color: #ff8c8c;
-}
-
-
-.main-diary-content p.description {
-font-size: 16px;
-max-width: 650px;
-margin: 0 auto 40px;
-line-height: 1.6;
-text-align: center;
-}
-
-
-.stars {
-font-size: 22px;
-margin: 40px 0 20px;
-text-align: center;
-}
-
-
-ul.diary-list {
-text-align: center;
-margin: 0 auto;
-max-width: 600px;
-line-height: 1.8;
-list-style-type: none;
-}
-
-
-/* Things to Share Section */
-.share-section {
-background-color: #cae6e3;
-padding: 60px 20px;
-text-align: center;
-margin-top: 60px;
-}
-
-
-.share-section h3 {
-font-size: 22px;
-margin-bottom: 40px;
-}
-
-.weeklyshare-caption {
-margin-top: 10px;
-font-size: 14px;
-color: #444;
 }
 
 @media (max-width: 600px) {
